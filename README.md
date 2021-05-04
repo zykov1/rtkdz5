@@ -158,7 +158,7 @@ batch.expect_column_values_to_be_of_type(column='user_id', type_='INTEGER')
 batch.expect_column_values_to_not_be_null(column='billing_period')
 
 - Проверка на тип данных  
-batch.expect_column_values_to_be_of_type(column='bill_ing_priod', type_='DATE')
+batch.expect_column_values_to_be_of_type(column='billing_priod', type_='DATE')
 
 - Проверка на то, что данные попадают в заданный диапазон  
 batch.expect_column_values_to_be_between(column='billing_period', max_value='2022-01-01', min_value='2013-01-01')
@@ -247,7 +247,6 @@ batch.expect_column_values_to_not_be_null(column='title')
 
 - Проверка на тип данных  
 batch.expect_column_values_to_be_of_type(column='title', type_='TEXT')
-
 
 ## description ## 
 
