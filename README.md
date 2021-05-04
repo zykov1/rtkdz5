@@ -4,20 +4,20 @@
 
 ## pay_doc_type + pay_doc_num ##
 
-- Эти поля должны являться уникальными вместе - быть "бизнесовым PK"
+- Эти поля должны являться уникальными вместе - быть "бизнесовым PK"  
 batch.expect_compound_columns_to_be_unique(column_list=['pay_doc_type', 'pay_doc_num'])
 
 ## user_id ## 
 
-- Не должно быть данных с NULL
+- Не должно быть данных с NULL  
 batch.expect_column_values_to_not_be_null(column='user_id')
 
-- Проверка на тип данных (можно везде опустить, т.к. проверяет БД, но на всяк.случай оставляю)
+- Проверка на тип данных (можно везде опустить, т.к. проверяет БД, но на всяк.случай оставляю)  
 batch.expect_column_value_s_to_e_of_type(column='user_id', type_='INTEGER')
 
 ## pay_doc_type ## 
 
-- Не должно быть данных с NULL
+- Не должно быть данных с NULL  
 batch.expect_column_values_to_not_be_null(column='pay_doc_type')
 
 - Проверка на тип данных  
@@ -167,7 +167,7 @@ batch.expect_column_values_to_not_be_null(column='service')
 batch.expect_column_values_to_be_of_type(column='service', type_='TEXT')
 
 - Соответствие значения допустимому списку  
-batch.expect_column_distinct_values_to_be_in_set(column='service', value_set=['Connect', 'Disconnect', 'Setup Environment'])
+batch.expect_column_distinct_values_to_be_in_set(column='service', value_set=['Setup Environment', 'Connect', 'Disconnect'])
 
 ## tariff ## 
 
@@ -178,7 +178,7 @@ batch.expect_column_values_to_not_be_null(column='tariff')
 batch.expect_column_values_to_not_be_null(column='tariff')
 
 - Соответствие значения допустимому списку  
-batch.expect_column_distinct_values_to_be_in_set(column='tariff', value_set=['Maxi', 'Mini', 'Gigabyte', 'Megabyte'])
+batch.expect_column_distinct_values_to_be_in_set(column='tariff', value_set=['Gigabyte', 'Megabyte', 'Maxi', 'Mini'])
 
 ## sum ## 
 
@@ -261,4 +261,4 @@ batch.expect_column_values_to_not_be_null(column='service')
 batch.expect_column_values_to_be_of_type(column='service', type_='TEXT')
 
 - Соответствие значения допустимому списку  
-batch.expect_column_distinct_values_to_be_in_set(column='service', value_set=['Connect', 'Disconnect', 'Setup Environment'])
+batch.expect_column_distinct_values_to_be_in_set(column='service', value_set=['Setup Environment', 'Connect', 'Disconnect'])
