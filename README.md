@@ -31,7 +31,7 @@ batch.expect_column_distinct_values_to_equal_set(column='pay_doc_type', value_se
 
 ## pay_doc_num ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='pay_doc_num')
 
 - Проверка на тип данных  
@@ -39,7 +39,7 @@ batch.expect_column_values_to_be_of_type(column='pay_doc_num', type_='INTEGER')
 
 ## account ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='account')
 
 - Проверка на тип данных  
@@ -58,7 +58,7 @@ batch.expect_column_values_to_be_between(column='phone', max_value=79999999999, 
 
 ## billing_period ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='billing_period')
 
 - Проверка на тип данных  
@@ -69,7 +69,7 @@ batch.expect_column_values_to_be_between(column='billing_period', max_value='202
 
 ## pay_date ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='pay_date')
 
 - Проверка на тип данных  
@@ -80,7 +80,7 @@ batch.expect_column_values_to_be_between(column='pay_date', max_value='2022-01-0
 
 ## sum ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='sum')
 
 - Проверка на тип данных  
@@ -146,7 +146,7 @@ batch.expect_column_values_to_be_of_type(column='bytes_sent', type_='BIGINT')
 
 ## user_id ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='user_id')
 
 - Проверка на тип данных  
@@ -154,7 +154,7 @@ batch.expect_column_values_to_be_of_type(column='user_id', type_='INTEGER')
 
 ## billing_period ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='billing_period')
 
 - Проверка на тип данных  
@@ -165,7 +165,7 @@ batch.expect_column_values_to_be_between(column='billing_period', max_value='202
 
 ## service ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='service')
 
 - Проверка на тип данных  
@@ -176,7 +176,7 @@ batch.expect_column_distinct_values_to_be_in_set(column='service', value_set=['S
 
 ## tariff ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='tariff')
 
 - Проверка на тип данных  
@@ -187,7 +187,7 @@ batch.expect_column_distinct_values_to_be_in_set(column='tariff', value_set=['Gi
 
 ## sum ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='sum')
 
 - Проверка на тип данных  
@@ -198,7 +198,7 @@ batch.expect_column_values_to_be_between(column='sum', max_value=999999999, min_
 
 ## created_at ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='created_at')
 
 - Проверка на тип данных  
@@ -212,7 +212,7 @@ batch.expect_column_values_to_be_between(column='created_at', max_value='2022-01
 
 ## user_id ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='user_id')
 
 - Проверка на тип данных  
@@ -220,7 +220,7 @@ batch.expect_column_values_to_be_of_type(column='user_id', type_='INTEGER')
 
 ## start_time ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='start_time')
 
 - Проверка на тип данных  
@@ -231,7 +231,7 @@ batch.expect_column_values_to_be_between(column='start_time', max_value='2022-01
 
 ## end_time ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='end_time')
 
 - Проверка на тип данных  
@@ -242,7 +242,7 @@ batch.expect_column_values_to_be_between(column='end_time', max_value='2022-01-0
 
 ## title ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='title')
 
 - Проверка на тип данных  
@@ -251,7 +251,7 @@ batch.expect_column_values_to_be_of_type(column='title', type_='TEXT')
 
 ## description ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='description')
 
 - Проверка на тип данных  
@@ -259,7 +259,7 @@ batch.expect_column_values_to_be_of_type(column='description', type_='TEXT')
 
 ## service ## 
 
-- Не должно быть отсутствия точных данных (NULL )  
+- Не должно быть отсутствия точных данных (NULL)  
 batch.expect_column_values_to_not_be_null(column='service')
 
 - Проверка на тип данных  
